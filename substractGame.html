@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Math Kidz</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mathKidz.css">
+	<script src ="sideMenu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="w3.css">
+	<script src="JQuery/jquery.js"></script>
+	<script src="JQuery/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+	<script src="JQuery/jquery-ui-1.12.0.custom/jquery-ui.min.css"></script>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src ="subtractionGame.js"></script>
+ <script>
+ function autoRefresh()
+{
+	window.location = window.location.href;
+}
+ 
+setInterval('autoRefresh()', 12000); 
+</script>
+</head>
+<body>
+<!---Header and Menu--->
+	<nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="sideNavGames">
+		<a href="javascript:void(0)" onclick="w3_close()" 
+		class="w3-closenav w3-large">Close &times;</a>
+		<a href="index.php">Home</a>
+		<a href="lessons.html">Lessons</a>
+		<a href="parentsAndTeachers.html">Parents & Teachers</a>
+	<li class="w3-dropdown-hover w3-right">
+			<a href="" class="w3-hover-khaki" title="Games">Games<i class="fa fa-caret-down"></i></a>     
+			<div class="w3-dropdown-content w3-text-theme">
+			<a href="substractGame.html" class="w3-hover-khaki">Subtraction Tiles</a>
+			<a href="addSumSense.html" class="w3-hover-khaki">Add Sum Sense</a>
+			<a href="countDot.html" class="w3-hover-khaki">Count It & Dot It</a>
+			</div>
+			</li>
+	</nav>
+	<header class="w3-container w3-deep-purple">
+		<span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+		<span id="nowPlaying"><h5>Now Playing: </span><span id="gameName">SUBTRACTION TILES</span></h5>
+	</header>
+	
+
+	
+<!-- Main Container -->
+	<div class="w3-row">
+		<div id="otherSideGames" class="w3-col w3-right w3-container">
+			<div class="w3-card-4 sideGame">
+				<a href="matchUp.html" style="text-decoration:none;"><img src="images/matchupSide.png" alt="match up" style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Match Up</p></a>
+				</div>
+			</div>
+			<div class="w3-card-4 sideGame" >
+				<a href="addSumSense.html"style="text-decoration:none;"><img src="images/addsumsensest.png" alt=""style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Add Sum Sense</p></a>
+				</div>
+			</div>
+			<div class="w3-card-4 sideGame" >
+				<a href="CountDot.html" style="text-decoration:none;"><img src="images/countDotSidee.png" alt=""style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Count It & Dot It</p></a>
+				</div>
+			</div>
+		</div>
+
+<!-- Left Container -->	
+	<div class="w3-rest w3-container w3-leftbar w3-border-amber w3-rightbar w3-border-amber" id ="subtractTilesContainer">
+
+		<audio controls="controls" id="move-sound">
+			<source src="audio/try-again.mp3" type="audio/mpeg" />
+			<source src="audio/try-again.ogv" type="audio/ogg" />
+		</audio>
+		
+		<audio controls="controls" id="correctsound">
+			<source src="audio/beeps.mp3" type="audio/mpeg" />
+			<source src="audio/beeps.ogv" type="audio/ogg" />
+		</audio>
+	
+
+		<div class="w3-row">
+			<div class="w3-col w3-right w3-container w3-purple w3-center w3-border w3-round-xlarge" style="width:115px">
+				<div><p class="w3-purple w3-border w3-round-xlarge w3-border-light-green">Timer</p>
+					<span id="time"></span> 
+				</div>
+			</div>
+		
+			
+		
+		<div class="w3-rest w3-container w3-purple w3-rightbar w3-border-white w3-border w3-round-xlarge" id="middleContain"><p></p>
+	
+<!-- Game  container -->
+	
+			<div class="w3-container w3-content w3-center"  id="gameContainer" style="max-width:850px";>
+				<div class="w3-row w3-xlarge" id="topRow">
+					<div id="randomNum"></div>
+				</div>
+			</div>
+<!-- answer  container -->
+	<div class="w3-container">
+		<div class="w3-round w3-center w3-animate-left" id="ansBox" style="width:650px; height:30%";>
+			<span id="number1">oooo?</span><span>-</span><span id="number2">?</span><span>=</span><span style="color:black";  id="answer">nn</span>
+		</div>
+	</div>
+		</div>	
+		</div>
+	
+	</div>
+	
+<!-- bottom container -->
+	<div class="w3-container w3-padding-8 w3-deep-purple" style="width:80%;">
+		<p>	In this game, students use their knowledge of ones, and tens to where players
+			need to select either one or two numbers from the grid to complete the subtraction calculation.  
+			They strengthen their number sense as they apply their computation skills in subtraction to find 
+			missing addends.
+		</p>
+	</div>
+	</div>
+</body>
+</html>

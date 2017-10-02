@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Math Kidz</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mathKidz.css">
+	<script src ="sideMenu.js"></script>
+	<script src ="matchUp.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="w3.css">
+	<script src="JQuery/jquery.js"></script>
+	<script src="JQuery/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+	<script src="JQuery/jquery-ui-1.12.0.custom/jquery-ui.min.css"></script>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src ="matchUp.js"></script>
+</head>
+<body>
+<!---Header and Menu--->
+	<nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="sideNavGames">
+		<a href="javascript:void(0)" onclick="w3_close()" 
+		class="w3-closenav w3-large">Close &times;</a>
+		<a href="index.php">Home</a>
+		<a href="lessons.html">Lessons</a>
+		<a href="parentsAndTeachers.html">Parents & Teachers</a>
+		<li class="w3-dropdown-hover w3-right">
+			<a href="" class="w3-hover-khaki" title="Games">Games<i class="fa fa-caret-down"></i></a>     
+			<div class="w3-dropdown-content w3-text-theme">
+			<a href="substractGame.html" class="w3-hover-khaki">Subtraction Tiles</a>
+			<a href="addSumSense.html" class="w3-hover-khaki">Add Sum Sense</a>
+			<a href="countDot.html" class="w3-hover-khaki">Count It & Dot It</a>
+    </div>
+			</li>
+	</nav>
+	<nav class="w3-container" id="matchUpHeader">
+	<ul class="w3-navbar w3-right-align w3-large">
+		<li class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</li>
+	<li class="w3-margin-left"><a class="w3-hover-none" href="index.php">
+				<span id="loo"><img src="images/loo.png" alt="logo"/></span></a></li>
+	</ul>
+		<span id="nowPlaying"><h5>Now Playing: </span><span id="gameName">Match Up</span></h5>
+	</nav>
+	
+		<audio controls="controls" id="correctsound">
+			<source src="audio/tada.mp3" type="audio/mpeg" />
+			<source src="audio/tada.ogv" type="audio/ogg" />
+		</audio>
+	
+<!-- Main Container -->
+	<div class="w3-row">
+		<div id="otherSideGames" class="w3-col w3-right w3-container w3-leftbar w3-border-amber">
+			<div class="w3-card-4 sideGames">
+				<a href="substractGame.html" style="text-decoration:none;"><img src="images/subtractTilesSide.png" alt="subtract tiles" style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Subtraction Tiles</p></a>
+				</div>
+			</div>
+			<div class="w3-card-4 sideGames" >
+				<a href="addSumSense.html"style="text-decoration:none;"><img src="images/addSumSenseSide.png" alt=""style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Add Sum Sense</p></a>
+				</div>
+			</div>
+			<div class="w3-card-4 sideGames" >
+				<a href="CountDot.html" style="text-decoration:none;"><img src="images/countDotSide.png" alt=""style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Count It & Dot It</p></a>
+				</div>
+			</div>
+		</div>
+	
+		<div class="w3-rest w3-container w3-leftbar w3-border-amber" id="matchUp">
+				
+			<div class="w3-container w3-content" id="gameSpace" style="max-width:1750px";>
+				<button onclick="document.getElementById('toPlay').style.display='block'" class="w3-btn w3-round-large w3-yellow">How To Play</button>
+				<div id="toPlay" class="w3-modal">
+				<div class="w3-modal-content w3-animate-left">
+				<div class="w3-container">
+					<span onclick="document.getElementById('toPlay').style.display='none'" class="w3-closebtn">&times;</span>
+						<p><span style="font-weight:bold">Goal: </span>Match the correct cards on their right numbers by dragging the cards and droping it!</p>
+				</div>
+				</div>
+				</div>
+	
+			<div class="w3-container w3-center w3-round-xlarge w3-padding w3-margin w3-border w3-xlarge " id="numberCards"> </div>
+			<div class="w3-container w3-center w3-round-xlarge w3-padding  w3-margin w3-border " id="wordCards"> </div>
+ 
+					<div id="successMessage">
+					<h2>You did it!</h2>
+					<button onclick="init()">Play Again</button>
+			</div>	
+				
+		</div>	
+	
+		</div>			
+				<footer class="w3-container w3-padding-4 w3-center" class="matchupFooter ">
+				<img src="images/gamesFooter.png" alt="footerimage"/><br>
+					Copyright 2016 Math Kidz
+				</footer>	
+				
+		</body>
+</html>		

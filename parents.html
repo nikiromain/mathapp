@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<html>
+<head>
+	<title>Math Kidz</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mathKidz.css">
+	<script src ="sideMenu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+<body id="Parents">
+
+<!-- Side Navigation on click -->
+	<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2" id="mySidenav">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-teal">Close
+			<i class="fa fa-remove"></i>
+		</a>
+		<a href="index.php">Home</a>
+		<a href="lessons.html">Lessons</a>
+		<a href="parentsAndTeachers.html">Parents & Teachers</a>
+		<a href="" class="w3-hover-khaki" title="Games">Games<i class="fa fa-caret-down"></i></a>     
+			<div class="w3-dropdown-content w3-text-theme">
+			<a href="substractGame.html" class="w3-hover-khaki">Subtraction Tiles</a>
+			<a href="addSumSense.html" class="w3-hover-khaki">Add Sum Sense</a>
+			<a href="countDot.html" class="w3-hover-khaki">Count It & Dot It</a>
+	</nav>
+
+
+<!-- Navbar -->
+	<div id="topbar"><img src="images/topbar.png" alt="topbar"/>
+	</div>
+	<div class="w3-top w3-border-bottom">
+		<ul class="w3-navbar w3-text-theme w3-right-align w3-large w3-padding-16">
+			<li class="w3-hide-medium w3-hide-large w3-opennav w3-left">
+				<a class="w3-large" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+			</li>
+			<li class="w3-margin-left"><a class="w3-hover-none" href="index.html">
+				<span id="logo"><img src="images/logo.png" alt="logo"/></span></a></li>
+			<li class="w3-hide-small w3-right"><a href="#" class="w3-hover-khaki" title="Search"><i class="fa fa-search"></i></a></li>
+			<li class="w3-hide-small w3-right"><a href="#" class="w3-hover-khaki">Lessons</a></li>
+			<li class="w3-hide-small w3-pale-green w3-right"><a href="#" class="w3-hover-khaki">Parents & Teachers</a></li>
+			<li class="w3-hide-small w3-dropdown-hover w3-right">
+			<a href="" class="w3-hover-khaki" title="Notifications">Games<i class="fa fa-caret-down"></i></a>     
+				<div class="w3-dropdown-content w3-text-theme">
+			<a href="substractGame.html" class="w3-hover-khaki">Subtraction Tiles</a>
+			<a href="addSumSense.html" class="w3-hover-khaki">Add Sum Sense</a>
+			<a href="countDot.html" class="w3-hover-khaki">Count It & Dot It</a>
+				</div>
+			</li>
+			<li class="w3-right w3-hover-khaki w3-hide-small"><a href="index.php" class="w3-text-teal w3-hover-khaki"><i class="fa fa-home"></i>Home</a></li>
+		</ul>
+	</div>
+
+<!-- Navbar on small screens -->
+	<div id="navSmall" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:43px;">
+		<ul class="w3-navbar w3-left-align w3-large w3-theme">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="">Games</a></li>
+			<li><a href="parentsAndTeachers.html">Parents & Teachers</a></li>
+			<li class="w3-dropdown-hover w3-right">
+			<a href="" class="w3-hover-khaki" title="Notifications">Games<i class="fa fa-caret-down"></i></a>     
+			<div class="w3-dropdown-content w3-text-theme">
+			<a href="substractGame.html" class="w3-hover-khaki">Subtraction Tiles</a>
+			<a href="addSumSense.html" class="w3-hover-khaki">Add Sum Sense</a>
+			<a href="countDot.html" class="w3-hover-khaki">Count It & Dot It</a>
+    </div>
+			</li>
+		</ul>
+	</div>
+	
+<!-- Container -->
+<div class="w3-container  w3-padding-24"  id="bodyP">
+	<div class="w3-container w3-padding-24 w3-center" id="bodyPT" style="margin-top:43px;">
+	
+		<div class="w3-row"><br>
+		<h2 style="text-align:center">Information for Parents</h2>
+		<p>This section contains answers to questions frequently asked by parents.
+			Parents are also encouraged to read the Teachers section. 
+		</p>
+		</div>
+		<div class="w3-row" id="pTt1"><br>
+			<h3>How can I tell if my child has dyscalculia? </h3>
+			<div class="w3-padding-large" id="pTt1">
+			If your child has persistent difficulties with mathematics, 
+			you should suspect dyscalculia, even if your child also has reading problems. 
+			You should have your child referred to a school psychologist for an assessment. 
+			Assessment should include interviews with you and your child, an IQ test, and mathematics tests.
+			Do not forget though that you have the right to be informed of results, and that you know your child best.
+			Always ask for a second opinion if in doubt. You should be aware that dyscalculia is less well known than dyslexia, 
+			so this makes it hard to diagnose. You may need to be persistent! 
+			</div>
+		</div>
+		
+		<div class="w3-row" id="pT2"><br>
+			<h3 style="text-align:center" >What kind of remediation works best? </h3>
+			<div class="w3-padding-large" id="pT2">
+			There are many different approaches to remediation, some proprietary "methods" taught to special educators, 
+			others published in commercially available books or software.
+			Which works best remains an open question. We just don't know enough about dyscalculia to be sure. 
+			Nor can we be sure that a given remediation will work perfectly, or even well. Learning disability 
+			specialists who work with children often spend a lot of time trying different techniques and exercises
+			to figure out what is helping the most for a particular child. This is the hallmark of a good person, 
+			rather than having a set approach, they will analyse and problem solve.
+			The types of remediation which are likely to help the most are those which focus on understanding
+			(particularly of quantity), rather than purely drilling or mechanistic approaches. 
+			</div>
+		</div>
+		
+			<div class="w3-row" id="pTt3"><br>
+			<h3 style="text-align:center" >Will my child "grow out of" dyscalculia? </h3>
+			<div class="w3-padding-large" id="pTt3">
+				While it is possible that children may grow out of some<br>
+				difficulties with mathematics,in most cases your child will
+				 <br>NOT grow out of dyscalculia. It is important therefore to seek <br>help,
+			your child needs special assistance in order to catch up on maths.
+			</div>
+		</div>
+			
+		
+		<div class="w3-row" id="pT4" ><br>
+			<h3 style="text-align:center"; >Ideas for home</h3>
+			<div class="w3-padding-large" id="pTt4">
+			<ul class="genPrinNumSense">
+			   Simple everyday things can have an enormous impact. Try to incorporate math into daily living. 
+				<li>Use any sort of counters to illustrate concepts. Coloured paddle pop sticks, <br>
+				plastic pirate coins or any cheap bulk item</li>
+				<li>Solve real life problems with money, measurement and time.</li>
+				<li>Help a child learn to read a map and calculate distances when you take trips by car.</li>
+			</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="w3-center">
+	 <ul class="w3-pagination">
+		<li><a href="parentsAndTeachers.html">&laquo;</a></li>
+		<li><a href="parentsAndTeachers.html">1</a></li>
+		<li><a class="w3-khaki" href="parents.html">2</a></li>
+	</ul>
+  
+	</div>
+	</div>
+</div>
+<!-- Footer -->
+	<footer class="w3-container w3-padding-24 w3-center">
+		<h4>A Math Kidz Project</h4>
+		<p><img src="images/footer-image.png" alt="footerimage"/></p>
+		<a class="footer" href="aboutUs.html" title="About Us">About Us|</a>
+		<a class="footer" href="termsOfUse.html" title="Terms of Us">Terms of Use|</a>
+		<a class="footer" href="pricavyPolicy.html" title="Privacy Policy">Privacy Policy|</a>
+		<a class="footer" href="" title="Email">Email</a>
+		<p>Copyright 2016 Math Kidz</p>
+
+		<div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+			<span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+			<a class="w3-btn" href="#Parents"><span class="w3-xlarge">
+			<i class="fa fa-chevron-circle-up"></i></span></a>
+		</div>
+	</footer>
+	
+</body>
+</html>

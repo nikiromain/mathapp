@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Math Kidz</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mathKidz.css">
+	<script src ="sideMenu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="w3.css">
+	<script src="JQuery/jquery.js"></script>
+	<script src="JQuery/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+	<script src="JQuery/jquery-ui-1.12.0.custom/jquery-ui.min.css"></script>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src ="CountDot.js"></script>
+</head>
+<body>
+<!---Header and Menu--->
+	<nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="sideNavGames">
+		<a href="javascript:void(0)" onclick="w3_close()" 
+		class="w3-closenav w3-large">Close &times;</a>
+		<a href="index.php">Home</a>
+		<a href="lessons.html">Lessons</a>
+		<a href="parentsAndTeachers.html">Parents & Teachers</a>
+		<li class="w3-dropdown-hover w3-right">
+			<a href="" class="w3-hover-khaki" title="Games">Games<i class="fa fa-caret-down"></i></a>     
+			<div class="w3-dropdown-content w3-text-theme">
+			<a href="substractGame.html" class="w3-hover-khaki">Subtraction Tiles</a>
+			<a href="addSumSense.html" class="w3-hover-khaki">Add Sum Sense</a>
+			<a href="countDot.html" class="w3-hover-khaki">Count It & Dot It</a>
+    </div>
+			</li>
+	</nav>
+	<header class="w3-container w3-purple">
+		<span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+		<span id="nowPlaying"><h5>Now Playing: </span><span id="gameName">COUNT IT & DOT IT</span></h5>
+	
+	</header>
+	
+<!-- Main Container -->
+	<div class="w3-row">
+		<div id="otherSideGames" class="w3-col w3-right w3-container">
+			<div class="w3-card-4 sideGames">
+				<a href="substractGame.html" style="text-decoration:none;"><img src="images/subtractTilesSide.png" alt="subtract tiles" style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Subtraction Tiles</p></a>
+				</div>
+			</div>
+			<div class="w3-card-4 sideGames" >
+				<a href="addSumSense.html"style="text-decoration:none;"><img src="images/addSumSenseSide.png" alt=""style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>Add Sum Sense</p></a>
+				</div>
+			</div>
+			<div class="w3-card-4 sideGames" >
+				<a href="matchUp.html" style="text-decoration:none;"><img src="images/matchitsmall.png" alt=""style="width:100%"/>
+			    <div class="w3-container w3-center">
+					<p>75px</p></a>
+				</div>
+			</div>
+		</div>
+	
+<!-- Left Container -->	
+		<div class="w3-rest w3-container" id="countDot"><p><span style="font-weight:bold">
+		<div id="buttonTop">
+		<button onclick="document.getElementById('toPlay').style.display='block'" class="w3-btn w3-round-large w3-yellow">How To Play</button>
+				<div id="toPlay" class="w3-modal">
+				<div class="w3-modal-content w3-animate-left">
+				<div class="w3-container">
+					<span onclick="document.getElementById('toPlay').style.display='none'" class="w3-closebtn">&times;</span>
+						<p><span style="font-weight:bold">Goal: </span>Type the digit that is the same as the number of dots and the word!</p>
+				</div>
+				</div>
+				</div>
+			</div>	
+	
+		
+<!-- Game  container -->
+	
+		<div class="w3-container w3-content w3-center" style="max-width:950px";>
+			
+			<div class="w3-row w3-large w3-center" id="dot-cards">
+			
+			<img src="CountD/one.png" id="pics" >
+				<input class="w3-input w3-border w3-border-green w3-round-large" style="width:20%; margin-left:40%;" id="answere" type="text" placeholder="Number?">
+		<button class="w3-btn w3-indigo" id="ansbtn" onclick="checky();">Check</button>
+					
+			</div>
+		
+	</div>
+	</div>
+		
+	
+	
+<!-- bottom container -->
+	<div class="w3-container w3-padding-8 w3-deep-purple" style="width:80%;">
+		<p>	In this game, students use their knowledge as they learn and strengthen their representation and number skills. 
+		</p>
+	</div>
+	</div>
+</body>
+</html>

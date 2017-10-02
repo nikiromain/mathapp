@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<html>
+<head>
+	<title>Math Kidz</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mathKidz.css">
+	<script src ="sideMenu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"></script>
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+	<script src ="sideMenu.js"></script>
+	<style>
+    .cse .gsc-search-button input.gsc-search-button-v2,
+    input.gsc-search-button-v2 {
+        height: 26px !important;
+        margin-top: 0 !important;
+        min-width: 13px !important;
+        padding: 5px 26px !important;
+        width: 68px !important;
+    }
+	
+</style>
+
+	</head>
+
+<body id="home">
+
+
+
+</body>
+</html> 
+
+
+		<div id="mySidenav" class="sidenav" style="float:right;width:60px;overflow:hidden;height:34px;margin-top:5px;margin-right:4px;cursor:pointer;">
+	<a href="javascript:void(0);" class="topnav-icons fa fa-search w3-xlarge w3-right w3-hover-khaki " onclick="openNav()" title="Search"></a>
+		</div>
+		
+		
+		<!DOCTYPE html> 
+<html> 
+<body> 
+
+<button onclick="enableMute(); disableMute();" type="button">Mute sound</button>
+<img src="smiley.gif" onclick="enableMute();">
+<button onclick="checkMute()" type="button">Check muted status</button><br> 
+
+<video id="myVideo" width="320" height="176" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var vid = document.getElementById("myVideo");
+
+function enableMute() { 
+
+  var audioElem = document.getElementById('myVideo');
+  if (audioElem.paused)
+    audioElem.play();
+  else
+    audioElem.pause();
+}
+</script> 
+
+<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body> 
+</html>
+<audio controls="controls" id="move-sound">
+						<source src="audio/try-again.mp3" type="audio/mpeg" />
+						<source src="audio/try-again.ogv" type="audio/ogg" />
+					</audio>
+					
+					
+					
+	<div id="bgAudioControls">
+				<p class="w3-purple w3-border w3-round-xlarge w3-border-light-green">Sound</p>
+					<a href="#" >
+					<img id="mute" src="images/speakeron.png" alt="Sound Off" />
+					</a>
+
+					<audio id="bgAudio" autoplay loop preload src="http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+					</div>				
